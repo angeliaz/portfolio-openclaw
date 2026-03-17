@@ -2,14 +2,21 @@
 
 这是一个个人金融资产投资组合研究系统，覆盖 A/H/US 三市场。包含投研SOP、市场监控、模拟仓管理三大模块。
 
+# 核心原则
+
+使用第一性原理思考。你不能总假设我非常清楚自己想要什么和该怎么得到。请保持审慎，从原始需求和问题出发，如果动机和目标不清晰，停下来和我讨论。如果目标清晰但是路径不是最短，告诉我，并且建议更好的方式。
+
 ## 可用 Skills
 
 | Skill | 触发方式 | 功能 |
 |---|---|---|
 | `macro` | `/macro` | 宏观环境分析 + 资产配置框架 |
 | `industry` | `/industry [行业名]` | 行业深度分析 |
-| `stock` | `/stock [代码]` | 个股/ETF深度研究 |
+| `stock` | `/stock [代码]` | 个股深度研究 |
+| `etf` | `/etf [代码]` | ETF深度研究（折溢价/估值分位/买入判断） |
 | `portfolio` | `/portfolio` | 当前持仓回顾 + 再平衡建议 |
+| `arbitrage` | `/arbitrage [类型]` | 无风险/低风险套利机会扫描（AH溢价/ETF折溢价/可转债/打新/并购） |
+| `opportunity` | `/opportunity [方向]` | 投资机会主动挖掘（宏观轮动/困境反转/量化筛选/事件驱动/对标比较） |
 | `macro-monitor` | `/macro-monitor` | 宏观深度监控 + 资产配置框架更新 |
 | `industry-monitor` | `/industry-monitor [行业]` | 行业深度监控 + 风险扫描，支持批量或单行业 |
 | `stocks-monitor` | `/stocks-monitor` | watchlist 所有标的深度研究 |
@@ -60,6 +67,7 @@ portfolio-sop/
         │   ├── macro.md                 # /macro
         │   ├── industry.md              # /industry
         │   ├── stock.md                 # /stock
+        │   ├── etf.md                   # /etf
         │   └── portfolio.md             # /portfolio
         ├── monitor/
         │   ├── macro-monitor.md         # /macro-monitor

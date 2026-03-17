@@ -10,7 +10,8 @@
       "Bash(echo \"TAVILY_API_KEY: $TAVILY_API_KEY:+已设置\\(隐藏\\)\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(''''version:'''', d.get\\(''''version''''\\)\\); print\\(''''bin:'''', d.get\\(''''bin''''\\)\\)\")",
       "Bash(find /Users/sophia/Documents/Angelia/code/cursor/investment-sop -name *.json -o -name .env -o -name *.env)",
-      "Bash(find /Users/sophia -maxdepth 6 -name .env -o -name *.env -o -name .envrc)"
+      "Bash(find /Users/sophia -maxdepth 6 -name .env -o -name *.env -o -name .envrc)",
+      "Bash(wc -c \"/Users/sophia/Documents/Angelia/code/cursor/portfolio-sop/report/gpt_review.md\" && xxd \"/Users/sophia/Documents/Angelia/code/cursor/portfolio-sop/report/gpt_review.md\" | head -20)"
     ]
   }
 }
