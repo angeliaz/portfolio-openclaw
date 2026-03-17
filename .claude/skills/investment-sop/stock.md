@@ -678,36 +678,6 @@ TTM = 最近一期年报数据 + 本年至今累计数 - 上年同期累计数
 
 ---
 
-### 3.8 技术面辅助（买入时机参考）
-
-```
-mcp__stock-sdk__get_kline_with_indicators
-  symbol=<代码>
-  period=week          # 周线看趋势
-  startDate=<2年前>
-  indicators=["MA","MACD","RSI","BOLL","KDJ"]
-```
-
-解读重点：
-- MA(20/60/120/250): 多头排列 vs 死叉
-- MACD: 金叉/死叉，柱状图趋势
-- RSI: > 70 超买，< 30 超卖
-- BOLL: 价格与上下轨关系
-
-### 3.9 资金流向（A股专项）
-
-```
-# 主力资金流向
-mcp__stock-sdk__get_fund_flow        codes=["sh600519"]
-
-# 大单分布（买盘 vs 卖盘）
-mcp__stock-sdk__get_panel_large_order  codes=["sh600519"]
-```
-
-解读：主力持续净流入 + 大单买盘占优 = 看多信号
-
----
-
 ## 研究第4步：否决门——"会不会永久亏钱？"
 
 > 从最坏角度系统性检验致命风险。**任何一条命中 → 直接否决**；信息不足 → 暂停（不买，先补信息）。
